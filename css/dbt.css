@@ -1,0 +1,29 @@
+.intrinsic-container {
+  margin: auto;
+  position: relative;
+  top: 0;
+  bottom: 0; /* vertical center */
+  left: 0;
+  right: 0; /* horizontal center */
+  max-height: calc(100vh - 67px);
+  width: 100vw;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+  max-width: 177.78vh; /* 16/9 = 1.778 */
+}
+
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

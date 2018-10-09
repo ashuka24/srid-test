@@ -1,3 +1,8 @@
+## Note
+This landing page is a duplicate copy of the one created by the Fall 2017 DBT Recycling Team. 
+
+It is used explicitly for the Fall 2018 CMU-SV Software Requirements and Interaction Design class taught by Cecile Peraire.
+
 # DBT - Don't Be Trashy
 
 Recycle more. Earn coupons. Have fun.

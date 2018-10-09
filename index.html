@@ -10,11 +10,6 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-127069217-1');
-      gtag('event', 'about', {'event_category': 'menu', 'event_label': 'about'});
-      gtag('event', 'video', {'event_category': 'menu', 'event_label': 'video'});
-      gtag('event', 'subscribe', {'event_category': 'menu', 'event_label': 'subscribe'});
-      gtag('event', 'subscribe-link', {'event_category': 'link', 'event_label': 'subscribe-link'});
-      gtag('event', 'contact', {'event_category': 'menu', 'event_label': 'contact'});
     </script>
     <!-- Google Tag Manager -->
     <script>
@@ -101,12 +96,18 @@
     <!-- Video Section -->
     <div class="intrinsic-container intrinsic-container-16x9">
       <section id="video" class="text-center">
+        <script>
+          gtag('event', 'video', {'event_category': 'menu', 'event_label': 'video'});
+        </script>
         <iframe width="100%" height="720" src="https://www.youtube.com/embed/1gtXJvsS8ds?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
       </section>
     </div>
 
     <!-- About Section -->
     <section id="about" class="content-section text-center">
+      <script>
+        gtag('event', 'about', {'event_category': 'menu', 'event_label': 'about'});
+      </script>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -120,18 +121,20 @@
             <img src="img/dbt-recyclable-creatures-friends.png" width="80%">
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- Subscribe Section -->
     <section id="subscribe" class="content-section text-center">
+      <script>
+        gtag('event', 'subscribe', {'event_category': 'menu', 'event_label': 'subscribe'});
+      </script>
       <div class="container">
         <div class="col-lg-8 mx-auto">
           <h2>Subscribe to DBT Updates</h2>
           <p>You can subscribe to see updates from the team and find out when we release!</p>
           <br/>
-          <a target="_blank" href="https://goo.gl/forms/Z8ex8uJrhvWp9Y1t2" class="btn btn-default btn-lg" id="subscribe-link">Subscribe Now</a>
+          <a target="_blank" href="https://goo.gl/forms/Z8ex8uJrhvWp9Y1t2" class="btn btn-default btn-lg" onclick="gtag('event', 'subscribe-link', {'event_category': 'link', 'event_label': 'subscribe-link'});" id="subscribe-link">Subscribe Now</a>
           <p></p>
           <p>
             <img src="img/dbt-recyclable-creatures-bin.png" width="50%">
@@ -142,6 +145,9 @@
 
     <!-- Contact Section -->
     <section id="contact" class="content-section text-center">
+      <script>
+        gtag('event', 'contact', {'event_category': 'menu', 'event_label': 'contact'});
+      </script>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
